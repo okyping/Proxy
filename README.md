@@ -16,7 +16,7 @@
 ```javascript
 var proxy = new Proxy(options);
 ```
-**options** `{Object=}` 初始化信息
+- **options** `{Object=}` 初始化信息
     - **splitMark** `{string}` 分隔符，要传递的消息不允许包含此符号，默认为'/'
     - **origin** `{string}` 允许数据共享到那个域，默认为'*'
 
