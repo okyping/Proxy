@@ -9,18 +9,18 @@
 
 ## 使用
 
-1. 在想要支持数据传播的文档中引入 `Proxy` ，支持在 `AMD` 的模块定义环境中使用，也支持直接在页面下通过 `script` 标签引用。
+在想要支持数据传播的文档中引入 `Proxy` ，支持在 `AMD` 的模块定义环境中使用，也支持直接在页面下通过 `script` 标签引用。
 
-2. 初始化
+初始化
 
 ```javascript
 var proxy = new Proxy(options);
 ```
 - **options** `{Object=}` 初始化信息
-    - **splitMark** `{string}` 分隔符，要传递的消息不允许包含此符号，默认为'/'
-    - **origin** `{string}` 允许数据共享到那个域，默认为'*'
+    - **splitMark** `{string}` 分隔符，要传递的消息不允许包含此符号，默认为 `/`
+    - **origin** `{string}` 允许数据共享到那个域，默认为 `*`
 
-3. 添加监听
+添加监听
 
 ```javascript
 proxy.listen(fuc);
@@ -30,7 +30,7 @@ proxy.listen(fuc);
 - **key** `{string}` 广播数据的key值
 - **value** `{string}` 广播数据的value值
 
-4. 广播数据
+广播数据
 
 ```javascript
 proxy.send(
@@ -41,7 +41,7 @@ proxy.send(
     target  // 窗口句柄，例如iframe
 );
 ```
-5. 扩展
+扩展
 
 对于获取不到窗口句柄，又跨域的页面，也可以传播数据。
 - 如果想要从a.com/a.html传播数据给独立窗口b.com/b.html
