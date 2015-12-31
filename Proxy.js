@@ -1,6 +1,6 @@
 /**
  * @file 跨页面跨域广播通信代理
- * @author yanping(yanping@baidu.com)
+ * @author yanping(okyping@163.com)
  */
 
 ;(function (global, factory) {
